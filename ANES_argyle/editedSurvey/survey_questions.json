@@ -1,0 +1,57 @@
+{
+    "age": {
+        "question": "What is the month, day and year of your birth?",
+        "type": "multiple-choice",
+        "colns": ["VCF0101"]
+    },
+    "gender": {
+        "question": "Respondent gender",
+        "type": "multiple-choice",
+        "colns": ["VCF0104"]
+    },
+    "race": {
+        "question": "What racial or ethnic group or groups best describes you?",
+        "type": "multiple-choice",
+        "colns": ["VCF0105a"]
+    },
+    "church": {
+        "question": "Lots of things come up that keep people from attending religious services even if they want to. Thinking about your life these days, do you ever attend religious services, apart from occasional weddings, baptisms or funerals? (IF YES:) Do you go to religious services every week, almost every week, once or twice a month, a few times a year, or never?",
+        "type": "multiple-choice",
+        "colns": ["VCF0130"]
+    },
+    "interest": {
+        "question": "Some people don’t pay much attention to political campaigns. How about you, would you say that you have been/were very much interested, somewhat interested, or not much interested in the political campaigns (so far) this year?",
+        "type": "multiple-choice",
+        "colns": ["VCF0310"]
+    },
+    "vote": {
+        "question": "Presidential vote (major parties and all ‘other’) \n (1) Democrat \n (2) Republican \n (3) neither Democrat nor Republican (incl. 3d/minor party candidates and write-ins)",
+        "type": "multiple-choice",
+        "colns": ["VCF0705"]
+    },
+    "discuss": {
+        "question": "How many days in the past week did you talk about politics with your family or friend",
+        "type": "multiple-choice",
+        "colns": ["VCF0733"]
+    },
+    "partisanship": {
+        "question": "Party ID - strength of partisanship",
+        "type": "multiple-choice",
+        "colns": ["VCF0305"]
+    },
+    "lib_cons": {
+        "question": "We hear a lot of talk these days about liberals and conservatives. When it comes to politics, do you usually think of yourself as extremely liberal, liberal, slightly liberal, moderate or middle of the road, slightly conservative, extremely conservative, or haven’t you thought much about this?",
+        "type": "multiple-choice",
+        "colns": ["VCF0803"]
+    },
+    "postal": {
+        "question": "State of interview - state postal abbreviation",
+        "type": "multiple-choice",
+        "colns": ["VCF0901b"]
+    },
+    "initial_party": {
+        "question": "Generally speaking, do you usually think of yourself as a Republican, a Democrat, an Independent, or what?",
+        "type": "multiple-choice",
+        "colns": ["VCF0302"]
+    }
+}

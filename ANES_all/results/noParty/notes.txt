@@ -1,0 +1,10 @@
+percent of time ChatGPT guessed right vote when person did not vote for their initial party: 25.78125%
+(restricted to only Democrat & Republican)
+
+Percent correct 0.65
+Total invalid human responses: 22
+               human_democrat  human_republican  human_other  ss_total
+ss_democrat                35                 3            0        38
+ss_republican              10                30            0        40
+ss_other                    0                 0            0         0
+human_total                45                33            0        78

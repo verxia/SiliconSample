@@ -1,0 +1,16 @@
+Percent correct 0.5717391304347826
+Total invalid human responses: 2003
+               human_democrat  human_republican  human_other  ss_total
+ss_democrat              2551                97           36      2684
+ss_republican             241              2097           36      2374
+ss_other                  745               388           86      1219
+human_total              3537              2582          158      6277
+
+#TODO: duplicates in data, new seed
+# temperature: .7
+# GPT-3
+vote is a binary version of GPT-3’s predicted probability of voting for the Republican candidate, dividing
+predictions at 0.50.
+# in 2020, i voted for ... -> probablility from word choice
+    we generated 128 (??) tokens worth of text from each silicon sample
+# add 2020, same question
