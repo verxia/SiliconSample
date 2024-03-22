@@ -2,6 +2,8 @@ import openai
 import numpy as np
 import time
 
+import sys
+sys.path.append("./")
 from api_key import API_KEY
 
 openai.api_key = API_KEY
