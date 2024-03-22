@@ -3,6 +3,7 @@ import pandas as pd
 import random
 import re
 from file_paths import *
+from api_key import API_KEY
 from openai import OpenAI
 
 def ask(model="gpt-3.5-turbo"):
