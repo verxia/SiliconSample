@@ -24,9 +24,14 @@
         "type": "multiple-choice",
         "colns": ["VCF0310"]
     },
-    "vote": {
+    "vote_orig": {
         "question": "Presidential vote (major parties and all ‘other’) \n (1) Democrat \n (2) Republican \n (3) neither Democrat nor Republican (incl. 3d/minor party candidates and write-ins)",
         "type": "multiple-choice",
+        "colns": ["VCF0705"]
+    },
+    "vote": {
+        "question":  "In the 2020 presidential election, I voted for",
+        "type": "written",
         "colns": ["VCF0705"]
     },
     "discuss": {

@@ -55,6 +55,7 @@ def ask_multiple_choice(client, model, responseID, persona, question_info, respo
                 "content": "Adopt the following persona and answer the question.\n" + persona + "\n" + question + "\n" + "Respond with only the number corresponding to your answer."
             }
         ],
+        temperature=0.7,
     )
     answer = answer.choices[0].message.content.strip()
     if answer.isnumeric():
@@ -125,6 +126,7 @@ def ask_written(client, model, responseID, persona, question_info, response):
     )
 
     response[coln] = answer.choices[0].message.content
+    #TODO: calculate probability that GPT-3 assigns to voting for a particular candidate based on written response
 
 def ask_ranking(client, model, responseID, persona, question_info, response):
     question = question_info["question"]

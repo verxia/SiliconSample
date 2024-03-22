@@ -63,19 +63,20 @@ def construct_persona_anes_all(row):
     return age + gender + race + income + union + religion + church + educ + parents_born + home_ownership + marital + postal + interest + discuss + lib_cons
 
 def construct_persona_anes_argyle(row):
-    age = "In terms of my age, I am " + str(row["VCF0101"]) + " years old. " if row["VCF0101"] != 0 else ""
-    gender = "I am a " + anes_argyle.gender_mapping[row["VCF0104"]] + ". " if anes_argyle.gender_mapping[row["VCF0104"]] != "" else ""
     race = "Racially, I am " + anes_argyle.race_mapping[row["VCF0105a"]] + ". " if anes_argyle.race_mapping[row["VCF0105a"]] != "" else ""
-    postal = "I live in " + row["VCF0901b"] + " state. " if row["VCF0901b"] != 99 else ""
+    discuss = "I spent " + anes_argyle.discuss_mapping[row["VCF0733"]] + " in the past week talking about politics with family or friends. " if anes_argyle.discuss_mapping[row["VCF0733"]] != "" else "" #TODO not matched with Argyle
+    initial_party = "Politically, I am a " + anes_argyle.initial_party_mapping[row["VCF0302"]] + ". " if anes_argyle.initial_party_mapping[row["VCF0302"]] != "" else "" # TODO missing partisanship
     church = "I attend church " + anes_argyle.church_mapping[row["VCF0130"]] + ". " if anes_argyle.church_mapping[row["VCF0130"]] != "" else ""
+    age = "I am " + str(row["VCF0101"]) + " years old. " if row["VCF0101"] != 0 else ""
+    gender = "I am a " + anes_argyle.gender_mapping[row["VCF0104"]] + ". " if anes_argyle.gender_mapping[row["VCF0104"]] != "" else ""
     interest = "I am " + anes_argyle.interest_mapping[row["VCF0310"]] + " in the political campaigns this year. " if anes_argyle.interest_mapping[row["VCF0310"]] != "" else ""
-    discuss = "I spent " + anes_argyle.discuss_mapping[row["VCF0733"]] + " in the past week talking about politics with family or friends. " if anes_argyle.discuss_mapping[row["VCF0733"]] != "" else ""
+    postal = "I live in " + row["VCF0901b"] + " state. " if row["VCF0901b"] != 99 else ""
+    
     partisanship = "I am a " + anes_argyle.partisanship[row["VCF0305"]] + ". " if anes_argyle.partisanship[row["VCF0305"]] != "" else ""
     lib_cons = "Ideologically, I describe myself as " + anes_argyle.lib_cons_mapping[row["VCF0803"]] + ". " if anes_argyle.lib_cons_mapping[row["VCF0803"]] != "" else ""
-    initial_party = "Politically, I am a " + anes_argyle.initial_party_mapping[row["VCF0302"]] + ". " if anes_argyle.initial_party_mapping[row["VCF0302"]] != "" else ""
 
 
-    return age + gender + race + postal + church + interest + discuss + partisanship + lib_cons + initial_party
+    return race + discuss + initial_party + church + age + gender + interest + postal
 
 def construct_personas():
     responses = pd.read_csv(RESPONSES_PATH)

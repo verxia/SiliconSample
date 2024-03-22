@@ -9,12 +9,12 @@ gender_mapping = {
 }
 
 race_mapping = {
-    1: "white, non-Hispanic",
-    2: "black non-Hispanic",
-    3: "Asian or Pacific Islander, non-Hispanic",
-    4: "American Indian or Alaska Native non-Hispanic",
+    1: "white",
+    2: "black",
+    3: "Asian or Pacific Islander",
+    4: "American Indian or Alaska Native",
     5: "Hispanic",
-    6: "other or multiple races, non-Hispanic",
+    6: "other or multiple races", #TODO
     7: "non-white and non-black",
     9: ""
 }
@@ -67,7 +67,57 @@ initial_party_mapping = {
 }
 
 postal_mapping = {
-    99: ""
+    99: "",
+    "AL": "Alabama",
+    "AK": "Alaska",
+    "AZ": "Arizona",
+    "AR": "Arkansas",
+    "CA": "California",
+    "CO": "Colorado",
+    "CT": "Connecticut",
+    "DE": "Delaware",
+    "FL": "Florida",
+    "GA": "Georgia",
+    "HI": "Hawaii",
+    "ID": "Idaho",
+    "IL": "Illinois",
+    "IN": "Indiana",
+    "IA": "Iowa",
+    "KS": "Kansas",
+    "KY": "Kentucky",
+    "LA": "Louisiana",
+    "ME": "Maine",
+    "MD": "Maryland",
+    "MA": "Massachusetts",
+    "MI": "Michigan",
+    "MN": "Minnesota",
+    "MS": "Mississippi",
+    "MO": "Missouri",
+    "MT": "Montana",
+    "NE": "Nebraska",
+    "NV": "Nevada",
+    "NH": "New Hampshire",
+    "NJ": "New Jersey",
+    "NM": "New Mexico",
+    "NY": "New York",
+    "NC": "North Carolina",
+    "ND": "North Dakota",
+    "OH": "Ohio",
+    "OK": "Oklahoma",
+    "OR": "Oregon",
+    "PA": "Pennsylvania",
+    "RI": "Rhode Island",
+    "SC": "South Carolina",
+    "SD": "South Dakota",
+    "TN": "Tennessee",
+    "TX": "Texas",
+    "UT": "Utah",
+    "VT": "Vermont",
+    "VA": "Virginia",
+    "WA": "Washington",
+    "WV": "West Virginia",
+    "WI": "Wisconsin",
+    "WY": "Wyoming"
 }
 
 partisanship = {
