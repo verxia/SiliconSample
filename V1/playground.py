@@ -109,7 +109,6 @@ def filter_anes():
     anes = anes.loc[anes['VCF0004'] == 2020]
     anes = anes[["VCF0101", "VCF0104", "VCF0105a", "VCF0130", "VCF0302", "VCF0310", "VCF0705", "VCF0733", "VCF0305", "VCF0803", "VCF0901b"]]
 
-    anes.to_csv(RESPONSES_PATH)
 
 
 API_KEY = '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'

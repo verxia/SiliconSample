@@ -72,8 +72,8 @@ def construct_persona_anes_argyle(row):
     interest = "I am " + anes_argyle.interest_mapping[row["VCF0310"]] + " in the political campaigns this year. " if anes_argyle.interest_mapping[row["VCF0310"]] != "" else ""
     postal = "I live in " + row["VCF0901b"] + " state. " if row["VCF0901b"] != 99 else ""
     
-    partisanship = "I am a " + anes_argyle.partisanship[row["VCF0305"]] + ". " if anes_argyle.partisanship[row["VCF0305"]] != "" else ""
-    lib_cons = "Ideologically, I describe myself as " + anes_argyle.lib_cons_mapping[row["VCF0803"]] + ". " if anes_argyle.lib_cons_mapping[row["VCF0803"]] != "" else ""
+    # partisanship = "I am a " + anes_argyle.partisanship[row["VCF0305"]] + ". " if anes_argyle.partisanship[row["VCF0305"]] != "" else ""
+    # lib_cons = "Ideologically, I describe myself as " + anes_argyle.lib_cons_mapping[row["VCF0803"]] + ". " if anes_argyle.lib_cons_mapping[row["VCF0803"]] != "" else ""
 
 
     return race + discuss + initial_party + church + age + gender + interest + postal
