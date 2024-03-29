@@ -2,6 +2,7 @@
 V1/*/originalSurvey
 .DS_Store
 api_key.py
+playground.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
