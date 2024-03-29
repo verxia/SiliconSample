@@ -10,7 +10,7 @@ tok_sets = {
     "trump": gen_variants( [ "donald", "trump", "republican", "conservative" ] ),
     "biden": gen_variants( [ "joe", "joseph", "biden", "democrat", "democratic", "liberal"] ),
 }
-anesdf = pd.read_csv("V2/2020_ANES.csv")
+anesdf = pd.read_csv("V2/2020_ANES_6.csv")
 
 full_results = []
 
@@ -28,18 +28,19 @@ for pid in tqdm( range(len(anesdf)) ):
     prompt = gen_backstory( pid, anesdf )
     prompt += " " + query
 
-    #print("---------------------------------------------------")
-    #print( prompt )
+    print("---------------------------------------------------")
+    print("PROMPT")
+    print( prompt )
 
     # cost, numtok = cost_approximation( prompt, engine="davinci", tokenizer=tokenizer )
     # costs.append( cost )
     # numtoks.append( numtok )    
 
-    results = run_prompts( [prompt], tok_sets, engine="davinci" )
+    results = run_prompts( [prompt], tok_sets )
     #print(results[0][0])
     full_results.append( (anes_id, prompt, results) )
 
 # print( "Total cost: ", np.sum(np.array(costs)) )
 # print( "Averge numtok: ", np.mean(np.array(numtoks)) )
     
-print(full_results[:5])
+# print(full_results[:5])

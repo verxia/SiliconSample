@@ -25,5 +25,6 @@ def gen_backstory( pid, df ):
     return backstory
 
 if __name__ == "__main__":
-    df = pd.read_csv("V2/2020_ANES.csv")
-    print(gen_backstory( 0, df ))
+    pass
+    # df = pd.read_csv("V2/2020_ANES.csv")
+    # print(gen_backstory( 0, df ))
