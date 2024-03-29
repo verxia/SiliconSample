@@ -12,7 +12,7 @@ from transformers import GPT2Tokenizer
 #     from anes2016 import *
 if sys.argv[1] == '2020':
     from anes2020 import *
-from common import *
+from V2.common import *
 
 foi_keys = fields_of_interest.keys()
 

@@ -1,12 +1,7 @@
 import openai
 import numpy as np
 import time
-
-import sys
-sys.path.append("./")
-from api_key import API_KEY
-
-openai.api_key = API_KEY
+openai.api_key = "PUT YOUR KEY HERE"
 
 def lc( t ):
     return t.lower()
@@ -26,6 +21,7 @@ def gen_variants( toks ):
     for t in toks:
         for v in variants:
             results.append( " " + v(t) )
+
     return results
 
 def logsumexp( log_probs ):
@@ -39,11 +35,12 @@ def extract_probs( lp ):
     ps = [ lp[k] for k in lp_keys ]
     ps = logsumexp( np.asarray(ps) )
     vals = [ (lp_keys[ind], ps[ind]) for ind in range(len(lp_keys)) ]
-    vals = sorted( vals, key=lambda x: x[1], reverse=True )
 
+    vals = sorted( vals, key=lambda x: x[1], reverse=True )
     result = {}
     for v in vals:
         result[ v[0] ] = v[1]
+
     return result
 
 def do_query( prompt, max_tokens=2, engine="davinci" ):
@@ -55,28 +52,26 @@ def do_query( prompt, max_tokens=2, engine="davinci" ):
         top_p=1,
         logprobs=100,
     )
-
     token_responses = response['choices'][0]['logprobs']['top_logprobs']
-
+    
     results = []
-
     for ind in range(len(token_responses)):
         results.append( extract_probs( token_responses[ind] ) )
 
     return results, response
-    
+
 def collapse_r( response, toks ):
     total_prob = 0.0
     for t in toks:
         if t in response:
             total_prob += response[t]
     return total_prob
-    
+
 def print_response( template_val, tok_sets, response ):
     #print( f"{template_val}" )
 
     print( tok_sets )
-    
+
     tr = []
     for tok_set_key in tok_sets.keys():
         toks = tok_sets[tok_set_key]
@@ -105,7 +100,7 @@ def parse_response( template_val, tok_sets, response ):
     for ind, tok_set_key in enumerate( tok_sets.keys() ):
         results[ tok_set_key ] = tr[ind]
     return results
-    
+
 def run_prompts( prompts, tok_sets, engine="davinci" ):
     results = []
     for prompt in prompts:
