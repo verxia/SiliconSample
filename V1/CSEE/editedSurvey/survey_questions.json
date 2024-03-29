@@ -20,7 +20,7 @@
         "colns": ["prov"]
     },
     "Interest": {
-        "question": "We'd like to ask a few questions about politics.How interested in politics are you generally? Use the scale below, where 0 means not interested at all and 10 means a great deal of interest. \n 0 - Not interested at all  (1) \n 1  (2) \n 2  (3) \n 3  (4) \n 4  (5) \n 5  (6) \n 6  (7) \n 7  (8) \n 8  (9) \n 9  (10) \n 10 - A great deal of interest  (11) ",
+        "question": "We'd like to ask a few questions about politics. How interested in politics are you generally? Use the scale below, where 0 means not interested at all and 10 means a great deal of interest. \n 0 - Not interested at all  (1) \n 1  (2) \n 2  (3) \n 3  (4) \n 4  (5) \n 5  (6) \n 6  (7) \n 7  (8) \n 8  (9) \n 9  (10) \n 10 - A great deal of interest  (11) ",
         "type": "multiple-choice-scale",
         "colns": ["interest"]
     },
@@ -715,7 +715,7 @@
         "colns": ["ideology"]
     },
     "D5": {
-        "question": "If a federal election were held today, for which party are you most likely to vote?\n Liberal Party of Canada  (1) \n Conservative Party of Canada  (2) \n The New Democratic Party  (3) \n The Bloc Québécois  (4) \n Green Party of Canada  (5) \n The People’s Party of Canada  (6) \n Another party  (7) \n I would not vote  (8)",
+        "question": "If a federal election were held today, of the following parties, I am most likely to vote for: \n Liberal Party of Canada  (1) \n Conservative Party of Canada  (2) \n The New Democratic Party  (3) \n The Bloc Québécois  (4) \n Green Party of Canada  (5) \n The People’s Party of Canada  (6) \n Another party  (7) \n I would not vote  (8)",
         "type": "multiple-choice",
         "colns": ["fed_vote"]
     },

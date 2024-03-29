@@ -9,18 +9,22 @@ from file_paths import *
 
 # For a given response
 def construct_persona_csee(row):
-    p_gender = "You identify as " + csee.gender_mapping[row["gender"]] + ". "
-    p_prov = "You live in " + csee.prov_mapping[row["prov"]] + ", Canada. "
-    p_age_born = "You were born in " + csee.age_born_mapping[int(row["age_born"])] + ". " if (row["age_born"] != ".") else ""
-    p_tongue = "The language you use most often in your household is " + csee.tongue_mapping[row["tongue"]] + ". " if (row["tongue"] != 98) else ""
-    p_parent = "You " + csee.parent_mapping[row["parent"]] + ". "
-    p_ev = csee.ev_mapping[int(row["ev"])] if (row["ev"] != "." and int(row["ev"]) != 97 and int(row["ev"]) != 98) else ""
 
-    p_media = []
-    for i in range(1,6):
-        if row["media_" + str(i)] == "1":
-            p_media.append(csee.media_mapping[i])
-    p_media = "The media you consume most in your daily life is " + ", ".join(p_media) + ". "
+    # missing: going to church, talking about politics with friends/family, partisanship
+
+    p_gender = "I identify as " + csee.gender_mapping[row["gender"]] + ". "
+    p_interest = "On a scale from 0 to 10, where 0 means not interested at all and 10 means a great deal of interest, my interest in politics is " + str(row["interest"]) + ". " if row["interest"] != "." else ""
+    p_prov = "I live in " + csee.prov_mapping[row["prov"]] + ", Canada. "
+    p_age_born = "I was born in " + csee.age_born_mapping[int(row["age_born"])] + ". " if (row["age_born"] != ".") else ""
+    # p_tongue = "The language you use most often in your household is " + csee.tongue_mapping[row["tongue"]] + ". " if (row["tongue"] != 98) else ""
+    # p_parent = "You " + csee.parent_mapping[row["parent"]] + ". "
+    # p_ev = csee.ev_mapping[int(row["ev"])] if (row["ev"] != "." and int(row["ev"]) != 97 and int(row["ev"]) != 98) else ""
+
+    # p_media = []
+    # for i in range(1,6):
+    #     if row["media_" + str(i)] == "1":
+    #         p_media.append(csee.media_mapping[i])
+    # p_media = "The media you consume most in your daily life is " + ", ".join(p_media) + ". "
 
     p_eth = []
     for i in range(1, 7):
@@ -28,17 +32,17 @@ def construct_persona_csee(row):
             p_eth.append(csee.eth_mapping[i])
     if row["eth_7"] == 1:
         p_eth.append(row["eth_8"])
-    p_eth = "You identify as " + ", ".join(p_eth) + ". "
+    p_eth = "Racially, I am " + ", ".join(p_eth) + ". "
 
     if row["ideology"] == 98:
         p_ideology = ""
     else:
-        p_ideology = "Generally speaking, you consider yourself on the " + csee.ideology_mapping[row["ideology"]] + " side of the political spectrum. "
-    p_fed_vote = "If the federal elections were held today, you would vote for " + csee.fed_vote_mapping[row["fed_vote"]] + ". "
-    p_educ = "The highest level of education you have attained is " + csee.educ_mapping[row["educ"]] + ". "
-    p_income = csee.income_mapping[row["income"]] + " best describes your gross family household income last year."
+        p_ideology = "Ideologically, I am " + csee.ideology_mapping[row["ideology"]] + ". "
+    # p_fed_vote = "If the federal elections were held today, you would vote for " + csee.fed_vote_mapping[row["fed_vote"]] + ". "
+    # p_educ = "The highest level of education you have attained is " + csee.educ_mapping[row["educ"]] + ". "
+    # p_income = csee.income_mapping[row["income"]] + " best describes your gross family household income last year."
 
-    return p_gender + p_prov + p_age_born + p_tongue + p_parent + p_ev + p_media + p_eth + p_ideology + p_fed_vote + p_educ + p_income
+    return p_eth + p_ideology + p_age_born + p_gender + p_interest + p_prov
 
 def construct_persona_anes_all(row):
     age = "You are " + anes_all.age_mapping[row["VCF0101"]] + " years old. " if anes_all.age_mapping[row["VCF0101"]] != "" else ""
@@ -83,7 +87,7 @@ def construct_personas():
 
     personas = {}
     for index, row in responses.iterrows():
-        personas[row['responseID']] = construct_persona_anes_argyle(row)
+        personas[row['responseID']] = construct_persona_csee(row)
     return personas
 
 if __name__ == "__main__":

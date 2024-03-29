@@ -4,6 +4,9 @@ import random
 import re
 from file_paths import *
 from openai import OpenAI
+
+import sys
+sys.path.append("./")
 from api_key import API_KEY
 
 def ask(model="gpt-3.5-turbo"):
@@ -52,7 +55,7 @@ def ask_multiple_choice(client, model, responseID, persona, question_info, respo
         messages = [
             {
                 "role": "user",
-                "content": "Adopt the following persona and answer the question.\n" + persona + "\n" + question + "\n" + "Respond with only the number corresponding to your answer."
+                "content": persona + "\n" + question + "\n" + "Respond with only the number corresponding to the answer."
             }
         ],
         temperature=0.7,
