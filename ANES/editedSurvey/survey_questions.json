@@ -1,0 +1,92 @@
+{
+    "age": {
+        "template": "I am XXX years old.",
+        "type": "multiple-choice",
+        "colns": ["VCF0101"]
+    },
+    "gender": {
+        "template": "I am XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0104"]
+    },
+    "race": {
+        "template": "Racially, I am XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0105a"]
+    },
+    "educ1": {
+        "template": "The highest level of school I have completed is XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0110"]
+    },
+    "income": {
+        "template": "The total income of all members of my family living in my house before taxes is in the XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0114"]
+    },
+    "union": {
+        "template": "XXX",
+        "type": "multiple-choice",
+        "colns": ["VCF0127"]
+    },
+    "religion": {
+        "template": "Religiously, I am XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0128"]
+    },
+    "church": {
+        "template": "I attend church XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0130"]
+    },
+    "educ": {
+        "template": "The highest level of school I have completed is XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0140"]
+    },
+    "parents_born": {
+        "template": "XXX",
+        "type": "multiple-choice",
+        "colns": ["VCF0143"]
+    },
+    "home_ownership": {
+        "template": "XXX",
+        "type": "multiple-choice",
+        "colns": ["VCF0146"]
+    },
+    "marital": {
+        "template": "XXX",
+        "type": "multiple-choice",
+        "colns": ["VCF0147"]
+    },
+    "postal": {
+        "template": "I live in XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0901b"]
+    },
+    "initial_party": {
+        "template": "Generally speaking, I think of myself as XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0302"]
+    },
+    "interest": {
+        "template": "I have been XXX in the political campaigns (so far) this year.",
+        "type": "multiple-choice",
+        "colns": ["VCF0310"]
+    },
+    "discuss": {
+        "template": "In the past week, I talked about politics with my family or friend XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0733"]
+    },
+    "lib_cons": {
+        "template": "Ideologically, I consider myself XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0849"]
+    },
+    "partisanship": {
+        "template": "My partisanship is XXX.",
+        "type": "multiple-choice",
+        "colns": ["VCF0305"]
+    }
+}

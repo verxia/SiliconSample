@@ -1,0 +1,12 @@
+--------------------------------------------------------------
+Percent correct: 38.89%
+--------------------------------------------------------------
+Generated 1 invalid responses
+             human_1  human_2  ss_total
+ss_1             521      444       965
+ss_2             455       51       506
+human_total      976      495      1471
+--------------------------------------------------------------
+Key:
+1: Left wing parties (Green, NDP, Liberals)
+2: Right wing parties (Conservatives, PPC)

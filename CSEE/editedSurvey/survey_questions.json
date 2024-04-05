@@ -1,0 +1,62 @@
+{
+    "gender": {
+        "template": "I am XXX.",
+        "type": "multiple-choice",
+        "colns": ["gender"]
+    },
+    "province": {
+        "template": "I live in XXX.",
+        "type": "multiple-choice",
+        "colns": ["prov"]
+    },
+    "interest": {
+        "template": "On a scale where 0 means not interested at all and 10 means a great deal of interest, I would rate my interest in politics generally as XXX.",
+        "type": "multiple-choice-scale",
+        "colns": ["interest"]
+    },
+    "age_born": {
+        "template": "I was born in XXX.",
+        "type": "multiple-choice",
+        "colns": ["age_born"]
+    },
+    "D1": {
+        "template": "In my household, the language I use most is XXX.",
+        "type": "multiple-choice",
+        "colns": ["tongue"]
+    },
+    "D2": {
+        "template": "I XXX",
+        "type": "multiple-choice",
+        "colns": ["parent"]
+    },
+    "ev": {
+        "template": "XXX",
+        "type": "multiple-choice",
+        "colns": ["ev"]
+    },
+    "media": {
+        "template": "The form of media I consume the most is XXX.",
+        "type": "multi-select",
+        "colns": ["media_1", "media_2", "media_3", "media_4", "media_5", "media_6"]
+    },
+    "D3": {
+        "template": "Racially, I am XXX.",
+        "type": "multi-select"  ,
+        "colns": ["eth_1", "eth_2", "eth_3", "eth_4", "eth_5", "eth_6", "eth_7", "eth_8"] 
+    },
+    "D4": {
+        "template": "I consider myself on the XXX side of the political spectrum?",
+        "type": "multiple-choice-scale",
+        "colns": ["ideology"]
+    },
+    "D6": {
+        "template": "The highest level of education I have obtained is XXX.",
+        "type": "multiple-choice-scale",
+        "colns": ["educ"]
+    },
+    "D7": {
+        "template": "My gross family household income last year is XXX.",
+        "type": "multiple-choice-scale",
+        "colns": ["income"]
+    }
+}

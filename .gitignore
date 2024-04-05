@@ -1,9 +1,10 @@
 # My data
-V1/*/originalSurvey
-V2/argyleCode/files
+ANES/originalSurvey
+CSEE/originalSurvey
 .DS_Store
 api_key.py
-playground.py
+_random
+tmp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
