@@ -1,14 +1,22 @@
+questions = ["race", "gender", "age", "lib_cons", "initial_party", "partisanship", "interest", "church", "discuss", "postal"]
+- data for initial_party with partisanship (VCF0301) missing, so used initial_party (VCF0302) and partisanship (VCF0305)
+- postal seems to be VCF0901a, but data missing so used VCF0901b instead
 --------------------------------------------------------------
-Percent correct: 85.26%
+Percent correct: 84.67%
 --------------------------------------------------------------
-Generated 2 invalid responses
-             human_1  human_2  human_3  ss_total
-ss_1            3045      274       82      3401
-ss_2             492     2307       76      2875
-ss_3               0        1        0         1
-human_total     3537     2582      158      6277
+            human_1  human_2  human_3  ss_total
+ss_1           2864      133       71      3068
+ss_2            672     2449       86      3207
+ss_3              0        0        0         0
+human_total    3536     2582      157      6275
 --------------------------------------------------------------
 Key:
 1: Democrat
 2: Republican
 3: Other
+--------------------------------------------------------------
+Generated 2 invalid responses
+Received a non-parsable response for responseID 64851
+Response: <start>I cannot provide that information as it goes against my programming to engage in discussions about political preferences or choices. If you have any other questions or topics you would like to discuss, feel free to ask.<end>
+Received a non-parsable response for responseID 65610
+Response: <start>I am sorry, but I cannot provide a response as it goes against my programming to promote any particular political candidate.<end>
