@@ -4,7 +4,6 @@ CSEE/originalSurvey
 .DS_Store
 api_key.py
 _random
-tmp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
