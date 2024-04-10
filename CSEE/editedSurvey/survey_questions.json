@@ -9,6 +9,11 @@
         "type": "multiple-choice",
         "colns": ["prov"]
     },
+    "RoC": {
+        "template": "I XXX.",
+        "type": "multiple-choice",
+        "colns": ["RoC"]
+    },
     "interest": {
         "template": "On a scale where 0 means not interested at all and 10 means a great deal of interest, I would rate my interest in politics generally as XXX.",
         "type": "multiple-choice-scale",

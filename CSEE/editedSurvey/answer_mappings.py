@@ -19,6 +19,10 @@ answer_mappings = {
         12: "Saskatchewan",
         13: "Yukon"
     },
+    "RoC": {
+        0: "do not live in Quebec",
+        1: "live in Quebec"
+    },
     "interest": {
         1: "1",
         2: "2",
