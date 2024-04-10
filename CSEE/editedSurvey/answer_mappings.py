@@ -24,6 +24,7 @@ answer_mappings = {
         1: "live in Quebec"
     },
     "interest": {
+        0: "0",
         1: "1",
         2: "2",
         3: "3",

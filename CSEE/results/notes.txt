@@ -1,3 +1,6 @@
+questions = ["D3", "gender", "age_year", "D4", "interest", "province"]
+- D3 = race, D4 = lib_cons
+- Compared to ANES: initial_party, partisanship, church, discuss missing
 --------------------------------------------------------------
 Percent correct: 38.89%
 --------------------------------------------------------------
