@@ -2,13 +2,59 @@ questions = ["D3", "gender", "age_year", "D4", "interest", "province"]
 - D3 = race, D4 = lib_cons
 - Compared to ANES: initial_party, partisanship, church, discuss missing
 --------------------------------------------------------------
-Percent correct: 38.89%
+Percent correct: 35.83%
 --------------------------------------------------------------
 Generated 1 invalid responses
              human_1  human_2  ss_total
-ss_1             521      444       965
-ss_2             455       51       506
+ss_1             402      370       772
+ss_2             574      125       699
 human_total      976      495      1471
+--------------------------------------------------------------
+Key:
+1: Left wing parties (Green, NDP, Liberals)
+2: Right wing parties (Conservatives, PPC)
+
+questions = ["D3", "gender", "age_year", "D6", "D7", "D1", "D2", "RoC", "D4", "interest", "province"]
+- D3 = race, D6 = educ, D7 = income, D2 = parent, D4 = ideology
+--------------------------------------------------------------
+Percent correct: 37.51%
+--------------------------------------------------------------
+Generated 4 invalid responses
+             human_1  human_2  ss_total
+ss_1             410      353       763
+ss_2             565      141       706
+human_total      975      494      1469
+--------------------------------------------------------------
+Key:
+1: Left wing parties (Green, NDP, Liberals)
+2: Right wing parties (Conservatives, PPC)
+
+questions = ["D3", "gender", "age_year", "D6", "RoC", "D4", "interest", "province"]
+- "long-term" variables
+- D3 = race, D6 = educ, D7 = income
+--------------------------------------------------------------
+Percent correct: 35.44%
+--------------------------------------------------------------
+Generated 3 invalid responses
+             human_1  human_2  ss_total
+ss_1             369      341       710
+ss_2             608      152       760
+human_total      977      493      1470
+--------------------------------------------------------------
+Key:
+1: Left wing parties (Green, NDP, Liberals)
+2: Right wing parties (Conservatives, PPC)
+
+
+questions = ["gender", "province", "RoC", "interest", "age_year", "D1", "D2", "ev", "media", "D3", "D4", "D6", "D7"]
+--------------------------------------------------------------
+Percent correct: 35.13%
+--------------------------------------------------------------
+Generated 7 invalid responses
+             human_1  human_2  ss_total
+ss_1             392      371       763
+ss_2             580      123       703
+human_total      972      494      1466
 --------------------------------------------------------------
 Key:
 1: Left wing parties (Green, NDP, Liberals)

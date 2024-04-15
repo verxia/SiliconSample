@@ -30,7 +30,7 @@
         "colns": ["tongue"]
     },
     "D2": {
-        "template": "I XXX",
+        "template": "I XXX.",
         "type": "multiple-choice",
         "colns": ["parent"]
     },

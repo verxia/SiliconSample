@@ -149,11 +149,10 @@ answer_mappings = {
         1: "am a parent or guardian of a child under the age of 18",
         0: "am not a parent or guardian of a child under the age of 18"
     },
-    "ev_mapping": {
-        1: "At the moment, you own a hybrid, hybrid plug-in, or 100% electric vehicle.",
-        0: "At the moment, you do not own a hybrid, hybrid plug-in, or 100% electric vehicle."
+    "ev": {
+        1: "At the moment, I own a hybrid, hybrid plug-in, or 100% electric vehicle.",
+        0: "At the moment, I do not own a hybrid, hybrid plug-in, or 100% electric vehicle."
     },
-    # TODO: multi-select
     "media": {
         1: "television",
         2: "radio",
