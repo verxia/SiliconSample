@@ -38,3 +38,20 @@ Key:
 1: Democrat
 2: Republican
 3: Other
+
+## ATTEMPT 2
+['race', 'gender', 'age', 'lib_cons', 'interest', 'church', 'discuss', 'postal']
+--------------------------------------------------------------
+Percent correct: 81.2%
+--------------------------------------------------------------
+Generated 2 invalid responses
+             human_1  human_2  human_3  ss_total
+ss_1            2725      210       75      3010
+ss_2             812     2370       83      3265
+ss_3               0        0        0         0
+human_total     3537     2580      158      6275
+--------------------------------------------------------------
+Key:
+1: Democrat
+2: Republican
+3: Other

@@ -2,7 +2,7 @@ import pandas as pd
 import json
 
 survey = "ANES"
-questions = ["race", "gender", "age", "lib_cons", "initial_party", "interest", "church", "discuss", "postal"]
+questions = ["race", "gender", "age", "lib_cons", "interest", "church", "discuss", "postal"]
 
 if survey == "ANES":
     from ANES.editedSurvey.answer_mappings import answer_mappings

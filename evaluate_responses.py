@@ -4,7 +4,7 @@ import json
 import construct_personas
 
 survey = "ANES"
-eval_number = 1
+eval_number = 2
 
 human_responses = pd.read_csv(survey + "/editedSurvey/human_responses.csv") 
 ss_responses = pd.read_csv(survey + "/results/ss_responses.csv")
@@ -45,7 +45,6 @@ for _, ss_row in ss_responses.iterrows():
     if int(human_row.iloc[0][coln]) == int(ss_row[coln]):
         correct += 1
     total += 1
-
 
 evaluation = pd.DataFrame(evaluation)
 evaluation.to_csv(eval_folder_filepath, index=False)
