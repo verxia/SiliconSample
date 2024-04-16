@@ -15,9 +15,9 @@ if survey == "ANES":
     query += "and (2) Donald Trump is the Republican candidate, and I voted for"
     coln = "VCF0705"
 if survey == "CSEE":
-    query = "If a federal election were held today, between (1) left wing parties (Green, NDP, Liberals), "
+    query = "If a federal election were held in 2022, between (1) left wing parties (Green, NDP, Liberals), "
     query += "and (2) right wing parties (Conservatives, PPC), I would be mostly like to vote for"
-    coln = "fed_vote"
+    coln = "fed_vote2" #fed_vote - party families, make sure to also change the prompt above ^
 
 with open(survey + "/results/personas.json", 'r') as f:
     personas = json.load(f)

@@ -1,60 +1,82 @@
-questions = ["D3", "gender", "age_year", "D4", "interest", "province"]
+             human_1  human_2  human_3  human_4  human_5  human_6  human_7  human_8  ss_total
+ss_1             251      309      111       50       44       29       54      151       999
+ss_2             268       84      204       39       41        9       19       43       707
+ss_3              24       55       11        1        5        7        5       12       120
+ss_4               0        0        0        0        0        0        0        0         0
+ss_5               0        0        0        0        0        0        0        0         0
+ss_6               0        0        0        0        0        0        0        0         0
+ss_7               0        0        7        0        1        0        0        0         8
+ss_8               4        2        3        0        3        0        1       13        26
+human_total      547      450      336       90       94       45       79      219      1860
+--------------------------------------------------------------
+Key:
+1 - Liberal Party of Canada
+2 - Conservative Party of Canada
+3 - The New Democratic Party
+4 - The Bloc Québécois
+5 - Green Party of Canada
+6 - The People’s Party of Canada
+7 - Another party
+8 - I would not vote
+
+## ATTEMPT 1
+['D3', 'gender', 'age_year', 'D4', 'interest', 'province']
 - D3 = race, D4 = lib_cons
 - Compared to ANES: initial_party, partisanship, church, discuss missing
 --------------------------------------------------------------
-Percent correct: 35.83%
+Percent correct: 34.19%
 --------------------------------------------------------------
 Generated 1 invalid responses
              human_1  human_2  ss_total
-ss_1             402      370       772
-ss_2             574      125       699
+ss_1             355      347       702
+ss_2             621      148       769
 human_total      976      495      1471
 --------------------------------------------------------------
 Key:
 1: Left wing parties (Green, NDP, Liberals)
 2: Right wing parties (Conservatives, PPC)
 
-questions = ["D3", "gender", "age_year", "D6", "D7", "D1", "D2", "RoC", "D4", "interest", "province"]
-- D3 = race, D6 = educ, D7 = income, D2 = parent, D4 = ideology
+## ATTEMPT 2
+['D3', 'gender', 'age_year', 'D6', 'D7', 'D1', 'D2', 'RoC', 'D4', 'interest', 'province']
+- D3 = race, D6 = educ, D7 = income, D2 = parent, D1 = language, D4 = ideology
 --------------------------------------------------------------
-Percent correct: 37.51%
+Percent correct: 34.31%
 --------------------------------------------------------------
 Generated 4 invalid responses
              human_1  human_2  ss_total
-ss_1             410      353       763
-ss_2             565      141       706
+ss_1             314      304       618
+ss_2             661      190       851
 human_total      975      494      1469
 --------------------------------------------------------------
 Key:
 1: Left wing parties (Green, NDP, Liberals)
 2: Right wing parties (Conservatives, PPC)
 
-questions = ["D3", "gender", "age_year", "D6", "RoC", "D4", "interest", "province"]
-- "long-term" variables
-- D3 = race, D6 = educ, D7 = income
+## ATTEMPT 3
+['D3', 'gender', 'age_year', 'D6', 'RoC', 'D4', 'interest', 'province']
 --------------------------------------------------------------
-Percent correct: 35.44%
+Percent correct: 34.38%
 --------------------------------------------------------------
-Generated 3 invalid responses
+Generated 4 invalid responses
              human_1  human_2  ss_total
-ss_1             369      341       710
-ss_2             608      152       760
-human_total      977      493      1470
+ss_1             338      328       666
+ss_2             636      167       803
+human_total      974      495      1469
 --------------------------------------------------------------
 Key:
 1: Left wing parties (Green, NDP, Liberals)
 2: Right wing parties (Conservatives, PPC)
 
-
-questions = ["gender", "province", "RoC", "interest", "age_year", "D1", "D2", "ev", "media", "D3", "D4", "D6", "D7"]
+## ATTEMPT 4
+['gender', 'province', 'RoC', 'interest', 'age_year', 'D1', 'D2', 'ev', 'media', 'D3', 'D4', 'D6', 'D7']
 --------------------------------------------------------------
-Percent correct: 35.13%
+Percent correct: 34.06%
 --------------------------------------------------------------
-Generated 7 invalid responses
+Generated 9 invalid responses
              human_1  human_2  ss_total
-ss_1             392      371       763
-ss_2             580      123       703
-human_total      972      494      1466
+ss_1             377      372       749
+ss_2             594      122       716
+human_total      971      494      1465
 --------------------------------------------------------------
 Key:
 1: Left wing parties (Green, NDP, Liberals)
