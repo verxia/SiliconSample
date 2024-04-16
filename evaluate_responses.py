@@ -3,9 +3,8 @@ import pandas as pd
 import json
 import construct_personas
 
-survey = "CSEE"
-
-eval_number = 3
+survey = "ANES"
+eval_number = 1
 
 human_responses = pd.read_csv(survey + "/editedSurvey/human_responses.csv") 
 ss_responses = pd.read_csv(survey + "/results/ss_responses.csv")
@@ -34,7 +33,7 @@ for _, ss_row in ss_responses.iterrows():
     human_row = human_responses.loc[human_responses['responseID'] == ss_row["responseID"]]
 
     evaluation["responseID"].append(ss_row["responseID"])
-    evaluation["persona"].append(personas[ss_row["responseID"]])
+    evaluation["persona"].append(personas[str(int(ss_row["responseID"]))])
     evaluation["human"].append(human_row.iloc[0][coln])
     evaluation["ss"].append(ss_row[coln])
 

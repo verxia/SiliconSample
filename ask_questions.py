@@ -7,7 +7,7 @@ from openai import OpenAI
 
 from api_key import API_KEY
 
-survey = "CSEE"
+survey = "ANES"
 model = "gpt-3.5-turbo-0125"
 
 if survey == "ANES":
@@ -17,7 +17,7 @@ if survey == "ANES":
 if survey == "CSEE":
     query = "If a federal election were held in 2022, between (1) left wing parties (Green, NDP, Liberals), "
     query += "and (2) right wing parties (Conservatives, PPC), I would be mostly like to vote for"
-    coln = "fed_vote2" #fed_vote - party families, make sure to also change the prompt above ^
+    coln = "fed_vote2" #fed_vote - parties directly, make sure to also change the prompt above ^
 
 with open(survey + "/results/personas.json", 'r') as f:
     personas = json.load(f)

@@ -1,8 +1,8 @@
 import pandas as pd
 import json
 
-survey = "CSEE"
-questions = ['D3', 'gender', 'age_year', 'D6', 'RoC', 'D4', 'interest', 'province']
+survey = "ANES"
+questions = ["race", "gender", "age", "lib_cons", "initial_party", "interest", "church", "discuss", "postal"]
 
 if survey == "ANES":
     from ANES.editedSurvey.answer_mappings import answer_mappings
@@ -24,6 +24,9 @@ for _, row in responses.iterrows():
         question_type = survey_questions[question]["type"]
 
         if question_type == "multiple-choice":
+            if survey == "ANES" and question == "postal":
+                persona += template.replace("XXX", mapping[row[colns[0]]]) + " "
+                continue
             if row[colns[0]] in [".", 97, 98, "97", "98"] or mapping[int(row[colns[0]])] == "":
                 continue
             persona += template.replace("XXX", mapping[int(row[colns[0]])]) + " "
